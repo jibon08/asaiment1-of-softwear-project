@@ -1,0 +1,201 @@
+.navber{
+    gap: 30px;
+    background-color:  rgb(26, 24, 122);
+    color: white;
+}
+/* icon responsive of navbar */
+nav a{
+    text-decoration: none;
+    color:white;
+}
+
+.list{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+#toggler,label{
+    display: none;
+}
+
+label i{
+    color: yellow;
+}
+
+@media screen and (max-width: 650px) {
+    .menu{
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+    label{
+        display: inline-flex;
+    }
+    #toggler:checked~.menu{
+        max-height: 100%;
+        }
+
+    .list{
+        flex-direction: column;
+        align-items: center;   
+    }
+    .op{
+        display: none;
+    } 
+    .shop{
+        display: none;
+    }
+    .pt{
+        text-align: center;
+    }
+    .category-bu{
+        padding-left: 60px;
+    }
+    .arrow-title{
+        padding-left:35px;
+    }
+    .arrow-icon{
+        padding-right:40px;
+    }
+    .card-title{
+        margin-left: 30px;
+    }
+    .cards{
+       margin-left: 25px;
+    }
+    .sale{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .foder-34{
+        text-align: center;
+    }
+}
+
+
+.nav-text1{ 
+    font: bold;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: 900;
+}
+.slid{
+  
+   color:black;
+   background-image: linear-gradient(to right, rgb(244, 214, 247),rgb(239, 245, 247),rgb(165, 151, 250));
+   justify-content: center; 
+}
+.pt{
+    margin-top: 120px;
+    padding-left: 130px;
+    
+}
+.iphone{
+    padding-left: 150px;
+}
+.cu-text4{
+    display: inline;
+    font-size: 35px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: coral;
+}
+
+.iphone{
+    height: 80vh;
+}
+.title{
+    font-size: 25px;
+}
+
+.arrow{
+    text-align:right;    
+}
+
+/* another */
+
+.macbook {
+    padding-top:30px;
+   padding-bottom: 107px;
+   font:bold;
+}
+/*  */
+
+/* this is cratagoriy desgin */
+.card-c{
+    text-align: center;
+    background-color:  #f6f6f6; 
+    border-radius: 10px; 
+   
+
+}
+.card-text{
+    padding-bottom: 10px;
+}
+
+.card-text9{
+    font:bold;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.banner{
+    padding-top: 30px;
+
+    background-image: linear-gradient(to right, rgb(244, 214, 247),rgb(239, 245, 247),rgb(165, 151, 250));
+}
+.banner-text{
+    text-align: center;
+    color:rgb(249, 237, 237);
+}
+.foder-34{
+    background-color:rgb(35, 184, 234);     
+}
+
+.like{
+    display:block;
+    padding-bottom:4px;
+    text-align:right;
+}
+
+.r-banner{
+    float: right; 
+}
+
+.l-banner{
+
+    float: left;
+}
+
+.cards{
+    text-align: center;  
+}
+.card{
+    background-color: rgb(246, 246, 246); 
+     
+}
+.i{
+    text-align: right;
+    margin-right: 10px;;
+}
+.f-section{
+    width: 300px;
+}
+
+.category-section{
+    display: grid;
+    gap: 10px;
+  }
+  .category-section-item{
+    background-color: rgb(199, 191, 191);
+    padding: 10px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 425px) {
+    .category-section {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media screen and (min-width: 900px) {
+    .category-section {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
